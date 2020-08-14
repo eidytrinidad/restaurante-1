@@ -63,10 +63,12 @@
           top: 45%; }
       .portada .contenedor .menu a {
         font-size: 1.1rem;
-        font-weight: 500;
+        font-weight: 600;
         color: #fff;
         text-decoration: none;
         margin: 0 2rem; }
+        .portada .contenedor .menu a:hover {
+          color: #3bf55a; }
     .portada .contenedor .texto {
       text-align: center;
       margin-top: 4rem; }
@@ -83,6 +85,25 @@
         font-size: 40px;
         width: 100%;
         max-width: 500px; }
+    .portada .contenedor .slider {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .portada .contenedor .slider .active {
+        border: 2px solid #fff;
+        background: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 0 0.4rem; }
+      .portada .contenedor .slider .btnSlider {
+        margin: 0 0.4rem;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: none;
+        background-color: #3bf55a; }
     .portada .contenedor .btnBox {
       margin-top: 100px; }
       .portada .contenedor .btnBox .btn {
@@ -506,5 +527,29 @@ body {
   width: 100%;
   max-width: 1100px;
   margin: auto; }
+
+.burgerMenu {
+  position: absolute;
+  top: 50%;
+  width: 310px;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: #fff;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem; }
+  .burgerMenu a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    margin: 0.50rem 0; }
+    .burgerMenu a:hover {
+      color: #3bf55a; }
 
 /*# sourceMappingURL=style.css.map */
