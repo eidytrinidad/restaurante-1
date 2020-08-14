@@ -97,6 +97,8 @@
         height: 20px;
         border-radius: 50%;
         margin: 0 0.4rem; }
+        .portada .contenedor .slider .active:focus {
+          outline: none; }
       .portada .contenedor .slider .btnSlider {
         margin: 0 0.4rem;
         width: 20px;
@@ -104,6 +106,10 @@
         border-radius: 50%;
         border: none;
         background-color: #3bf55a; }
+        .portada .contenedor .slider .btnSlider:focus {
+          outline: none; }
+        .portada .contenedor .slider .btnSlider:hover {
+          cursor: pointer; }
     .portada .contenedor .btnBox {
       margin-top: 100px; }
       .portada .contenedor .btnBox .btn {
@@ -116,13 +122,18 @@
         background: none;
         color: #fff; }
         .portada .contenedor .btnBox .b1:hover {
-          cursor: pointer; }
+          color: #000;
+          cursor: pointer;
+          background-color: #fff; }
       .portada .contenedor .btnBox .b2 {
         background-color: #3bf55a;
         color: #000;
         border: none; }
         .portada .contenedor .btnBox .b2:hover {
-          cursor: pointer; }
+          cursor: pointer;
+          border: 4px solid #3bf55a;
+          background: none;
+          color: #3bf55a; }
 
 .services {
   width: 100%; }
@@ -532,6 +543,7 @@ body {
   position: absolute;
   top: 50%;
   width: 310px;
+  height: 280px;
   left: 50%;
   right: 0;
   bottom: 0;
