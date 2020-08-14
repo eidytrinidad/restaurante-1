@@ -18,6 +18,25 @@
   .portada .contenedor {
     text-align: center;
     color: #fff; }
+    .portada .contenedor .headerResponsive {
+      padding: 2rem;
+      text-align: left;
+      display: none;
+      justify-content: space-between;
+      align-items: center; }
+      .portada .contenedor .headerResponsive .logo {
+        font-size: 45px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff; }
+      .portada .contenedor .headerResponsive .btnBurger {
+        border: none;
+        background: none; }
+        .portada .contenedor .headerResponsive .btnBurger i {
+          font-size: 25px;
+          color: #fff; }
+        .portada .contenedor .headerResponsive .btnBurger:hover i {
+          color: #3bf55a; }
     .portada .contenedor .menu {
       padding-top: 50px;
       z-index: 1; }
@@ -219,7 +238,8 @@
   .galeria .contenedor {
     margin-top: 100px;
     text-align: center;
-    width: 690px; }
+    width: 100%;
+    max-width: 690px; }
     .galeria .contenedor h2 {
       font-size: 41px;
       font-weight: 900;
@@ -275,6 +295,205 @@ footer {
         font-size: 24px;
         color: #fff; }
 
+@media only screen and (max-width: 1024px) {
+  .portada .contenedor .menu .logo::before {
+    width: 300px;
+    left: -180%; }
+  .portada .contenedor .menu .logo::after {
+    width: 300px; }
+  .portada .contenedor .menu a {
+    margin: 0 1rem; } }
+@media only screen and (max-width: 768px) {
+  .portada {
+    height: 550px; }
+    .portada .overlay {
+      height: 550px; }
+    .portada .contenedor .headerResponsive {
+      display: flex; }
+    .portada .contenedor .menu {
+      display: none; }
+    .portada .contenedor .texto {
+      margin-top: 2rem; }
+      .portada .contenedor .texto h1 {
+        font-size: 55px; }
+      .portada .contenedor .texto p {
+        font-size: 20px; }
+    .portada .contenedor .btnBox .btn {
+      width: 130px;
+      height: 55px;
+      font-size: 20px; }
+
+  .services .contenedor h2 {
+    font-size: 35px;
+    margin-bottom: 2rem; }
+  .services .contenedor p {
+    font-size: 23px;
+    max-width: 600px; }
+  .services .contenedor .service .serviceBox {
+    margin-bottom: 3rem; }
+
+  .aboutUs {
+    width: 100%;
+    height: 704px;
+    background-color: #3bf55a; }
+    .aboutUs .contenedor .titulo {
+      max-width: 500px;
+      margin-bottom: 60px; }
+      .aboutUs .contenedor .titulo h2 {
+        font-size: 35px;
+        margin-bottom: 2rem; }
+      .aboutUs .contenedor .titulo p {
+        font-size: 20px; }
+    .aboutUs .contenedor .quehacemos img {
+      width: 350px; }
+    .aboutUs .contenedor .quehacemos .texto {
+      margin-top: 1rem; }
+      .aboutUs .contenedor .quehacemos .texto h3 {
+        font-size: 30px;
+        margin-bottom: 2rem; }
+      .aboutUs .contenedor .quehacemos .texto p {
+        font-size: 20px; }
+
+  .alimentacion {
+    height: 400px; }
+    .alimentacion .overlay {
+      height: 400px; }
+    .alimentacion .contenedor .texto {
+      max-width: 600px; }
+      .alimentacion .contenedor .texto h3 {
+        font-size: 48px; }
+      .alimentacion .contenedor .texto p {
+        font-size: 20px; }
+
+  footer {
+    height: 300px;
+    z-index: 1; }
+    footer .overlay {
+      height: 300px; }
+    footer .contenedor .texto h3 {
+      font-size: 55px; }
+    footer .contenedor .texto .autor {
+      font-size: 20px; }
+    footer .contenedor .texto p {
+      font-size: 20px; } }
+@media only screen and (max-width: 425px) {
+  .portada {
+    height: 600px; }
+    .portada .overlay {
+      height: 600px; }
+    .portada .contenedor .headerResponsive {
+      display: flex; }
+    .portada .contenedor .menu {
+      display: none; }
+    .portada .contenedor .texto {
+      margin-top: 2rem; }
+      .portada .contenedor .texto h1 {
+        font-size: 40px; }
+      .portada .contenedor .texto p {
+        font-size: 18px; }
+    .portada .contenedor .btnBox .btn {
+      width: 120px;
+      height: 55px;
+      font-size: 18px;
+      margin-bottom: 1rem; }
+
+  .services .contenedor h2 {
+    font-size: 30px;
+    margin-bottom: 2rem; }
+  .services .contenedor p {
+    font-size: 18px;
+    max-width: 300px; }
+  .services .contenedor .service .serviceBox {
+    flex-direction: column;
+    margin-bottom: 7rem; }
+    .services .contenedor .service .serviceBox img {
+      width: 100%;
+      max-width: 100px;
+      margin: auto;
+      margin-bottom: 1rem; }
+    .services .contenedor .service .serviceBox .texto {
+      text-align: center; }
+      .services .contenedor .service .serviceBox .texto .titulo {
+        font-size: 20px; }
+      .services .contenedor .service .serviceBox .texto p {
+        font-weight: 400; }
+
+  .aboutUs {
+    width: 100%;
+    height: 944px;
+    background-color: #3bf55a; }
+    .aboutUs .contenedor .titulo {
+      max-width: 350px;
+      margin-bottom: 60px; }
+      .aboutUs .contenedor .titulo h2 {
+        font-size: 30px;
+        margin-bottom: 2rem; }
+      .aboutUs .contenedor .titulo p {
+        font-size: 18px; }
+    .aboutUs .contenedor .quehacemos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; }
+      .aboutUs .contenedor .quehacemos img {
+        width: 300px;
+        margin: auto; }
+      .aboutUs .contenedor .quehacemos .texto {
+        margin-top: 2rem;
+        width: 80%; }
+        .aboutUs .contenedor .quehacemos .texto h3 {
+          font-size: 30px;
+          margin-bottom: 2rem; }
+        .aboutUs .contenedor .quehacemos .texto p {
+          font-size: 18px; }
+
+  .galeria {
+    width: 100%;
+    height: 1265px;
+    margin-bottom: 55px; }
+    .galeria .contenedor {
+      margin-top: 3rem;
+      text-align: center;
+      width: 90%; }
+      .galeria .contenedor h2 {
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 3rem; }
+      .galeria .contenedor .album {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 3.7rem; }
+        .galeria .contenedor .album .foto {
+          width: 100%;
+          max-width: 250px;
+          margin-bottom: 1rem; }
+          .galeria .contenedor .album .foto img {
+            width: 100%; }
+
+  .alimentacion {
+    height: 350px; }
+    .alimentacion .overlay {
+      height: 350px; }
+    .alimentacion .contenedor .texto {
+      max-width: 350px; }
+      .alimentacion .contenedor .texto h3 {
+        font-size: 35px; }
+      .alimentacion .contenedor .texto p {
+        font-size: 18px; }
+
+  footer {
+    height: 250px;
+    z-index: 1; }
+    footer .overlay {
+      height: 250px; }
+    footer .contenedor .texto h3 {
+      font-size: 35px; }
+    footer .contenedor .texto .autor {
+      font-size: 18px; }
+    footer .contenedor .texto p {
+      font-size: 18px; } }
 * {
   box-sizing: border-box;
   padding: 0;
