@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   height: 820px;
-  background-image: url(../img/bgtop.png);
+  background-image: url(../img/slide1.png);
   background-size: cover;
   z-index: 1; }
   .portada .overlay {
@@ -526,6 +526,19 @@ footer {
       font-size: 18px; }
     footer .contenedor .texto p {
       font-size: 18px; } }
+.portada {
+  animation: animate 16s ease-in-out infinite; }
+
+@keyframes animate {
+  0%,100% {
+    background-image: url(../img/slide1.png);
+    background-size: cover; }
+  40% {
+    background-image: url(../img/slide2.png);
+    background-size: cover; }
+  80% {
+    background-image: url(../img/slide3.png);
+    background-size: cover; } }
 * {
   box-sizing: border-box;
   padding: 0;

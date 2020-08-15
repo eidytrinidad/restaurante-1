@@ -19,85 +19,97 @@ btnBurger.addEventListener("click", () => {
     }
 })
 
+
+
+
+
+
 //Slider
 
-const btnSlider = document.querySelectorAll(".slide");
-const btnActive = document.querySelector("#slide1").className="active"
-const btns = Array.from(btnSlider)
-const portada = document.querySelector(".portada")
-const overlay = document.querySelector(".portada .overlay")
-
-
-
-btns.forEach((btn, index) => {
-
-
-
-    btn.addEventListener("click", () => {
-
-        if (index == 0) {
-            portada.style.background = "url(img/bgtop.png)"
-            portada.style.backgroundSize = "cover"
-            overlay.style.display = "block"
-            btn.parentNode.firstElementChild.className = "active"
-            btn.parentNode.lastElementChild.className = "btnSlider"
-            btn.parentNode.children[1].className = "btnSlider"
-
-        }
-
-        if (index == 1) {
-            portada.style.background = "url(img/slide2.png)"
-            portada.style.backgroundSize = "cover"
-            overlay.style.display = "none"
-            btn.className = "active"
-            btn.previousElementSibling.className = "btnSlider"
-        }
-
-        if (index == 2) {
-            portada.style.background = "url(img/slide3.png)"
-            portada.style.backgroundSize = "cover"
-            btn.className = "active"
-            btn.previousElementSibling.className = "btnSlider"
-            console.log()
-
-        }
-    })
-
-})
-
-
-// let i=0;
-// while ( i<btn.length) {
-//     console.log(btn)
-//     i++
-// }
-
-
-// sliderBtn.map(btn=>{
-//     btn.addEventListener("click",e=>{
-//         btn.classList.replace("btnSlider","active")
-
-
-//     })
-// })
-
-// const btnSlide1 = document.querySelector("#slide1")
-// const btnSlide2 = document.querySelector("#slide2")
-// const btnSlide3 = document.querySelector("#slide3")
-
+// const btnSlider = document.querySelectorAll(".slide");
+// const btnActive = document.querySelector("#slide1").className = "active"
+// const btns = Array.from(btnSlider)
 // const portada = document.querySelector(".portada")
-// const overlay = document.querySelector(".portada .overlay")
 
-// btnSlide2.addEventListener("click",()=>{
-//     portada.style.background="url(img/slide2.png)"
-//     overlay.style.display="none"
-// })
-// btnSlide3.addEventListener("click",()=>{
-//     portada.style.background="url(img/slide3.png)"
-//     overlay.style.display="none"
+
+
+// let index=2;
+   
+//     if (index == 0) {
+
+//         btns[0].addEventListener('click', () => {
+//             portada.style.background = "url(img/slide1.png)"
+//             portada.style.backgroundSize = "cover"
+    
+//             btns[0].className = "active"
+//             btns[1].className = "btnSlider"
+//             btns[2].className = "btnSlider"
+//         })
+//     }
+    
+//     if (index == 1) {
+        
+//         btns[1].addEventListener('click', () => {
+//             portada.style.background = "url(img/slide2.png)"
+//             portada.style.backgroundSize = "cover"
+        
+//             btns[1].className = "active"
+//             btns[0].className = "btnSlider"
+//             btns[2].className = "btnSlider"
+//         })
+//     }
+    
+//     if (index==2) {
+        
+//         btns[2].addEventListener('click', () => {
+//             portada.style.background = "url(img/slide3.png)"
+//             portada.style.backgroundSize = "cover"
+        
+//             btns[2].className = "active"
+//             btns[0].className = "btnSlider"
+//             btns[1].className = "btnSlider"
+
+           
+//         })
+//     }
+
+
+
+// btns.forEach((btn, index) => {
+
+//     btn.addEventListener("click", () => {
+
+//         if (index == 0) {
+//             portada.style.background = "url(img/bgtop.png)"
+//             portada.style.backgroundSize = "cover"
+
+//             btn.parentNode.firstElementChild.className = "active"
+//             btn.parentNode.lastElementChild.className = "btnSlider"
+//             btn.parentNode.children[1].className = "btnSlider"
+
+//         }
+
+//         if (index == 1) {
+//             portada.style.background = "url(img/slide2.png)"
+//             portada.style.backgroundSize = "cover"
+
+//             btn.parentNode.firstElementChild.className = "btnSlider"
+//             btn.parentNode.children[1].className = "active"
+//             btn.parentNode.lastElementChild.className = "btnSlider"
+//         }
+
+//         if (index == 2) {
+//             portada.style.background = "url(img/slide3.png)"
+//             portada.style.backgroundSize = "cover"
+
+//             btn.parentNode.firstElementChild.className = "btnSlider"
+//             btn.parentNode.children[1].className = "btnSlider"
+//             btn.parentNode.lastElementChild.className = "active"
+
+//         }
+//     })
+
 // })
 
-// btnSlide1.addEventListener("click",()=>{
-//     portada.style.background="url(img/bgtop.png)"
-//     overlay.style.display="block"
-// })
+
+
